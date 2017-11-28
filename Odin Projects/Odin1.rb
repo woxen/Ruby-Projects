@@ -12,5 +12,3 @@ def caesar_cipher(str,inc)
 end
 
 caesar_cipher("What a string!", 5)
-
-puts puts puts
