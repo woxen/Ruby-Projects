@@ -7,6 +7,8 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low",
 def substring(string, dictionary)
   frequency_count = Hash.new()
   string.downcase!
+  # the line below creates an array of all occurences of the given substring and
+  # adds the size of the array to the frequency count
   dictionary.each do |s| frequency_count[s] = string.scan(/#{s}/).size end
   return frequency_count.delete_if {|k,v| v == 0}
 end
